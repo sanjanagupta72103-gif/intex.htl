@@ -64,5 +64,141 @@ alert("Hello JavaScript!");
     </footer>
 
     <script src="script.js"></script>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f8f4;
+    color: #2f4f4f;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #cdeee0;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #2f4f4f;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #1b7f5c;
+}
+
+/* Hero */
+.hero {
+    background-color: #e6f7f1;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+.hero button {
+    background-color: #8fdcc1;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero button:hover {
+    background-color: #6fc9a9;
+}
+
+/* Content */
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #2b7a5f;
+}
+
+.card button {
+    margin-top: 10px;
+    background-color: #b8ead7;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #9edec5;
+}
+
+/* Code block */
+.code {
+    display: none;
+    background-color: #f0fdf7;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background-color: #cdeee0;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+function showCode(type) {
+    let code = document.getElementById(type + "-code");
+
+    if (code.style.display === "block") {
+        code.style.display = "none";
+    } else {
+        code.style.display = "block";
+    }
+}
+
+function scrollToContent() {
+    document.getElementById("html").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
 </body>
 </html>
