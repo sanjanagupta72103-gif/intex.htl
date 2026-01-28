@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Dev Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1>🌿 WebDev Tutor</h1>
+        <nav>
+            <a href="#html">HTML</a>
+            <a href="#css">CSS</a>
+            <a href="#js">JavaScript</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h2>Learn Web Development</h2>
+        <p>Simple tutorials for HTML, CSS & JavaScript</p>
+        <button onclick="scrollToContent()">Start Learning</button>
+    </section>
+
+    <!-- Tutorials -->
+    <section class="content" id="html">
+        <div class="card">
+            <h3>HTML Tutorial</h3>
+            <p>HTML is used to structure web pages.</p>
+            <button onclick="showCode('html')">View Example</button>
+            <pre id="html-code" class="code">
+&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;This is HTML&lt;/p&gt;
+            </pre>
+        </div>
+
+        <div class="card" id="css">
+            <h3>CSS Tutorial</h3>
+            <p>CSS styles your website.</p>
+            <button onclick="showCode('css')">View Example</button>
+            <pre id="css-code" class="code">
+h1 {
+  color: green;
+  font-family: Arial;
+}
+            </pre>
+        </div>
+
+        <div class="card" id="js">
+            <h3>JavaScript Tutorial</h3>
+            <p>JavaScript makes websites interactive.</p>
+            <button onclick="showCode('js')">View Example</button>
+            <pre id="js-code" class="code">
+alert("Hello JavaScript!");
+            </pre>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 WebDev Tutor | Learn with 💚</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
